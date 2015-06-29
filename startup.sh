@@ -22,10 +22,10 @@ then
 fi
 
 #/etc/group
-if [ -f /var/www/html/db/group ]
+if [ -f /var/www/html/blast/db/group ]
 then
     rm /etc/group
-    ln -s /var/www/html/db/group /etc/group
+    ln -s /var/www/html/blast/db/group /etc/group
 fi
 
 a2enmod cgi
