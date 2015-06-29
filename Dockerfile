@@ -10,6 +10,7 @@ MAINTAINER Devon P. Ryan, dpryan79@gmail.com
 
 RUN apt-get -qq update && apt-get install --no-install-recommends -y curl \
     apache2 csh && \
+    adduser --uid 1450 galaxy && \
     mkdir /data && \
     mkdir /configs && \
     rm /var/www/html/index.html && \
