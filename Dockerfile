@@ -13,21 +13,14 @@ RUN apt-get -qq update && apt-get install --no-install-recommends -y curl \
     mkdir /data && \
     mkdir /configs && \
     rm /var/www/html/index.html && \
-    curl ftp://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.26/wwwblast-2.2.26-x64-linux.tar.gz | tar -zxpC /var/www/html --strip-components 1
+    curl ftp://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.26/wwwblast-2.2.26-x64-linux.tar.gz | tar -zxpC /var/www/html
 
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 ADD startup.sh /usr/local/bin/startup.sh
 
-#Need to mount /var/www/html/db, which should contain symlinks to /data
-#Need to mount /data
-#Add www-data to the appropriate groups?
-#Copy in /var/www/html/blast.rc if it exists
-
 EXPOSE :80
 
 VOLUME ["/data"]
-VOLUME ["/var/www/html/db"]
-#The above should have symlinks and html pages, which can be moved, and a groups file, which will also get moved
+VOLUME ["/var/www/html/blast/db"]
 
-#need to start apache and then tail -f its logs
 CMD ["startup.sh"]
