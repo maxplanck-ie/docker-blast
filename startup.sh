@@ -1,14 +1,15 @@
 #!/bin/bash
 
 cd /var/www/html/db
-for html in *.html
-do
-    rm /var/www/html/$html
-    ln -s $html /var/www/html/$html
-done
+if [ -f *.html ] then;
+    for html in `ls *.html`
+    do
+        rm /var/www/html/$html
+        ln -s $html /var/www/html/$html
+    done
+fi
 
-if [ -f /var/www/html/db/group ]
-then
+if [ -f /var/www/html/db/group ] then;
     rm /etc/group
     ln -s /var/www/html/db/group /etc/group
 fi

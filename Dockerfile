@@ -12,6 +12,7 @@ RUN apt-get -qq update && apt-get install --no-install-recommends -y curl \
     apache2 csh && \
     mkdir /data && \
     mkdir /configs && \
+    rm /var/www/html/index.html && \
     curl ftp://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.26/wwwblast-2.2.26-x64-linux.tar.gz | tar -zxpC /var/www/html --strip-components 1
 
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
