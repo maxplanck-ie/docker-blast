@@ -1,13 +1,13 @@
 #!/bin/bash
 
-cd /var/www/html/db
+cd /var/www/html/blast/db
 #.html files
 if [ -f *.html ]
 then
     for html in `ls *.html`
     do
-        rm /var/www/html/$html
-        cp $html /var/www/html/$html
+        rm /var/www/html/blast/$html
+        cp $html /var/www/html/blast/$html
     done
 fi
 
@@ -16,8 +16,8 @@ if [ -f *.rc ]
 then
     for rc in `ls *.rc`
     do
-        rm /var/www/html/$rc
-        cp $rc /var/www/html/$rc
+        rm /var/www/html/blast/$rc
+        cp $rc /var/www/html/blast/$rc
     done
 fi
 
