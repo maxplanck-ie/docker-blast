@@ -1,8 +1,10 @@
 #!/bin/bash
 
 cd /var/www/html/blast/db
+
 #.html files
-if [ -f *.html ]
+count=`ls  *.html 2> /dev/null | wc -l`
+if [ $count != 0 ]
 then
     for html in `ls *.html`
     do
@@ -12,7 +14,8 @@ then
 fi
 
 #.rc files
-if [ -f *.rc ]
+count=`ls  *.rc 2> /dev/null | wc -l`
+if [ $count != 0 ]
 then
     for rc in `ls *.rc`
     do
