@@ -17,4 +17,4 @@ Firstly, make sure to copy `/etc/group` to `/var/www/html/blast/db/group` and mo
 
 Actual usage is something of the form:
 
-    docker run -d -p 8080:80 -v /root/blast_config:/var/www/html/db -v /data/some_group/repository:/data docker-blast
+    docker run -d -p 8080:80 -v /root/blast_config:/var/www/html/blast/db -v /data/some_group/repository:/data docker-blast
