@@ -9,7 +9,7 @@ FROM ubuntu
 MAINTAINER Devon P. Ryan, dpryan79@gmail.com
 
 RUN apt-get -qq update && apt-get install --no-install-recommends -y curl \
-    apache2 csh && \
+    apache2 csh nfs-kernel-server && \
     adduser --uid 1450 galaxy && \
     mkdir /data && \
     mkdir /configs && \
@@ -19,9 +19,15 @@ RUN apt-get -qq update && apt-get install --no-install-recommends -y curl \
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 ADD startup.sh /usr/local/bin/startup.sh
 
+RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
+ADD ./yp.conf /etc/yp.conf
+ADD ./auto.master /etc/auto.master
+ADD ./auto.data /etc/automount/auto.data
+ADD ./auto.home /etc/automount/auto.home
+ADD ./nsswitch.conf /etc/nsswitch.conf
+
 EXPOSE :80
 
-VOLUME ["/data"]
 VOLUME ["/var/www/html/blast/db"]
 
 CMD ["startup.sh"]

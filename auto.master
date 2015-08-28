@@ -1,0 +1,2 @@
+/home         /etc/automount/auto.home     nosuid
+/-            /etc/automount/auto.data     nosuid,mountproto=tcp,rsize=32768,wsize=32768,hard,intr

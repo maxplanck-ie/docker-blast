@@ -1,5 +1,22 @@
 #!/bin/bash
 
+domainname solsys1.immunbio.mpg.de
+
+#Start rpcbind
+/usr/sbin/rpcbind
+/usr/sbin/rpc.statd --no-notify
+
+#Start ypbind
+/usr/sbin/ypbind
+
+#Start automount
+/usr/sbin/automount
+
+#restart automount
+sleep 15
+killall -9 automount
+/usr/sbin/automount
+
 cd /var/www/html/blast/db
 
 #.html files
