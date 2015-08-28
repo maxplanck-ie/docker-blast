@@ -3,8 +3,8 @@
 domainname solsys1.immunbio.mpg.de
 
 #Start rpcbind
-/usr/sbin/rpcbind
-/usr/sbin/rpc.statd --no-notify
+/sbin/rpcbind
+/sbin/rpc.statd --no-notify
 
 #Start ypbind
 /usr/sbin/ypbind

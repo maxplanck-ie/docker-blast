@@ -9,7 +9,7 @@ FROM ubuntu
 MAINTAINER Devon P. Ryan, dpryan79@gmail.com
 
 RUN apt-get -qq update && apt-get install --no-install-recommends -y curl \
-    apache2 csh nfs-kernel-server && \
+    apache2 csh psmisc nfs-kernel-server autofs nis && \
     adduser --uid 1450 galaxy && \
     mkdir /data && \
     mkdir /configs && \

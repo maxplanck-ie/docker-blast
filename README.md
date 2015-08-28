@@ -2,7 +2,7 @@ Note that this repository is primarily useful for our local setup. If you need y
 
 This repository contains the Dockerfile for a container hosting a blast web server.
 
-There are currently two directories that you can pass into the server `/data` and `/var/www/html/blast/db`. `/data` must hold the actual blast databases somewhere. Files under `/var/www/html/blast/db` fall into three categories:
+Files under `/var/www/html/blast/db` fall into three categories:
 
  1. Symbolic links to the actual blast databases in `/data`.
  2. `group`, which replaces `/etc/group` so you can add the `www-data` user to the appropriate groups for read-access to your blast databases (if needed)
@@ -17,4 +17,4 @@ Firstly, make sure to copy `/etc/group` to `/var/www/html/blast/db/group` and mo
 
 Actual usage is something of the form:
 
-    docker run -d -p 8080:80 -v /root/blast_config:/var/www/html/blast/db -v /data/some_group/repository:/data docker-blast
+    docker run -d -p 8080:80 -v /root/blast_config:/var/www/html/blast/db docker-blast
