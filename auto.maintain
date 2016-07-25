@@ -1,0 +1,1 @@
+* -mountproto=tcp,vers=4,rsize=32768,wsize=32768,hard,intr domus:/data/maintain/& 

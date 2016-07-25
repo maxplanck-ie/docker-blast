@@ -1,0 +1,19 @@
+/data/akhtar/bhardwaj                 valid:/data/akhtar/LUN62/bhardwaj                 
+/data/akhtar/group                    valid:/data/akhtar/LUN61/group                    
+
+/data/manke/kilpert                   valid:/data/manke/LUN69/kilpert                   
+
+/data/pearce/group                    valid:/data/pearce/LUN65/group                    
+/data/pearce/repository               valid:/data/pearce/LUN66/repository               
+/data/pearce/sequencing_data          valid:/data/pearce/LUN66/sequencing_data          
+
+/data/pearceed/group                  valid:/data/pearceed/LUN67/group                  
+/data/pearceed/repository             valid:/data/pearceed/LUN68/repository             
+/data/pearceed/sequencing_data        valid:/data/pearceed/LUN68/sequencing_data        
+
+/data/pospisilik/group                valid:/data/pospisilik/LUN63/group                
+/data/pospisilik/repository           valid:/data/pospisilik/LUN64/repository           
+/data/pospisilik/sequencing_data      valid:/data/pospisilik/LUN64/sequencing_data      
+
+/data/laemmermann/repository          valid:/data/laemmermann/LUN70/repository          
+/data/laemmermann/sequencing_data     valid:/data/laemmermann/LUN70/sequencing_data

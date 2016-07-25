@@ -22,8 +22,10 @@ ADD startup.sh /usr/local/bin/startup.sh
 RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
 ADD ./yp.conf /etc/yp.conf
 ADD ./auto.master /etc/auto.master
-ADD ./auto.data /etc/automount/auto.data
+ADD ./auto.valid /etc/automount/auto.valid
 ADD ./auto.home /etc/automount/auto.home
+ADD ./auto.maintain /etc/automount/auto.maintain
+ADD ./auto.solsys4 /etc/automount/auto.solsys4
 ADD ./nsswitch.conf /etc/nsswitch.conf
 
 EXPOSE :80
