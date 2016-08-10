@@ -1,3 +1,7 @@
+/data/processing3                     valid:/data/processing/LUN46/scratch
+
+/data/akhtar/sequencing_data          valid:/data/akhtar/LUN55/sequencing_data
+/data/akhtar/repository               valid:/data/akhtar/LUN56/repository
 /data/akhtar/bhardwaj                 valid:/data/akhtar/LUN62/bhardwaj                 
 /data/akhtar/group                    valid:/data/akhtar/LUN61/group                    
 
@@ -17,3 +21,11 @@
 
 /data/laemmermann/repository          valid:/data/laemmermann/LUN70/repository          
 /data/laemmermann/sequencing_data     valid:/data/laemmermann/LUN70/sequencing_data
+
+/data/kemler/group                    valid:/data/kemler/LUN47/group
+/data/kemler/repository               valid:/data/kemler/LUN47/repository
+/data/kemler/sequencing_data          valid:/data/kemler/LUN47/sequencing_data
+
+/data/boehm/sikora                    valid:/data/boehm/LUN58/sikora
+/data/boehm/repository                valid:/data/boehm/LUN52/repository
+/data/boehm/sequencing_data           valid:/data/boehm/LUN09/sequencing_data
