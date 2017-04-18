@@ -10,8 +10,11 @@ MAINTAINER Devon P. Ryan, dpryan79@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
-RUN apt-get install -y build-essential ruby ruby-dev ncbi-blast+
+RUN apt-get install -y build-essential ruby ruby-dev wget
 RUN apt-get install -y psmisc nfs-kernel-server autofs nis
+RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.6.0+-x64-linux.tar.gz && \
+    tar xf ncbi-blast-2.6.0+-x64-linux.tar.gz && \
+    cp ncbi-blast-2.6.0+/bin/* /usr/local/bin
 RUN gem install sequenceserver
 
 ADD startup.sh /usr/local/bin/startup.sh
