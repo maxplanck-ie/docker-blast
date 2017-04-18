@@ -17,4 +17,4 @@ Firstly, make sure to copy `/etc/group` to `/var/www/html/blast/db/group` and mo
 
 Actual usage is something of the form:
 
-    docker run -d -p 8080:80 -v /root/blast_config:/var/www/html/blast/db docker-blast
+    docker run -d -p 8080:80 --privileged --cap-add=ALL -v /root/blast_config:/var/www/html/blast/db docker-blast
