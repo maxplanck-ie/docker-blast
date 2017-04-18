@@ -2,9 +2,7 @@
 /data/processing2                     solsys4:/data/processing/LUN01
 /data/repository                      solsys4:/data/repository/LUN00
 /data/galaxy                          solsys4:/data/galaxy/LUN32
-/data/archive                         solsys4:/data/archive/LUN04
-
-/data/boehm/group                     solsys4:/data/boehm/LUN08/group
+/data/archive                         solsys4:/data/general/LUN04/archive
 
 /data/manke/repository                solsys4:/data/manke/LUN54/repository
 /data/manke/group                     solsys4:/data/manke/LUN57/group

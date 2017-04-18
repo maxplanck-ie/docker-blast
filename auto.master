@@ -3,6 +3,6 @@
 # timeo=180,nosuid,mountproto=tcp,rsize=1048576,wsize=1048576,hard,intr
 #
 /home         /etc/automount/auto.home      timeo=300,nosuid,mountproto=tcp,hard,intr
-/maintain     /etc/automount/auto.maintain  timeo=300,nosuid,mountproto=tcp,hard,intr
 /-            /etc/automount/auto.valid     timeo=300,nosuid,vers=4,mountproto=tcp,hard,intr
+/-            /etc/automount/auto.void      timeo=300,nosuid,vers=4,mountproto=tcp,hard,intr
 /-            /etc/automount/auto.solsys4   timeo=300,nosuid,vers=4,mountproto=tcp,hard,intr

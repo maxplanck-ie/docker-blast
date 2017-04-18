@@ -1,0 +1,37 @@
+/data/boehm/sequencing_data           void:/data/boehm/LUN09/sequencing_data
+/data/boehm/group                     void:/data/boehm/LUN51/group
+/data/boehm/repository                void:/data/boehm/LUN52/repository
+/data/boehm/sikora                    void:/data/boehm/LUN58/sikora
+
+/data/hilgers/group                   void:/data/hilgers/LUN05/group
+/data/hilgers/repository              void:/data/hilgers/LUN05/repository
+/data/hilgers/sequencing_data         void:/data/hilgers/LUN05/sequencing_data
+
+/data/kemler/group                    void:/data/kemler/LUN47/group
+/data/kemler/repository               void:/data/kemler/LUN47/repository
+/data/kemler/sequencing_data          void:/data/kemler/LUN47/sequencing_data
+
+/data/pospisilik/group                void:/data/pospisilik/LUN63/group                
+/data/pospisilik/repository           void:/data/pospisilik/LUN64/repository
+/data/pospisilik/sequencing_data      void:/data/pospisilik/LUN64/sequencing_data
+
+/data/pearce/group                    void:/data/pearce/LUN65/group
+/data/pearce/repository               void:/data/pearce/LUN66/repository
+/data/pearce/sequencing_data          void:/data/pearce/LUN66/sequencing_data
+
+/data/pearceed/group                  void:/data/pearceed/LUN67/group                  
+/data/pearceed/repository             void:/data/pearceed/LUN68/repository             
+/data/pearceed/sequencing_data        void:/data/pearceed/LUN68/sequencing_data 
+
+/data/manke/kilpert                   void:/data/manke/LUN69/kilpert
+
+/data/processing3                     void:/data/processing/LUN46/scratch
+
+/data/laemmermann/repository          void:/data/laemmermann/LUN70/repository          
+/data/laemmermann/sequencing_data     void:/data/laemmermann/LUN70/sequencing_data
+
+/data/akhtar/sequencing_data          void:/data/akhtar/LUN55/sequencing_data
+/data/akhtar/repository               void:/data/akhtar/LUN56/repository
+/data/akhtar/bhardwaj                 void:/data/akhtar/LUN62/bhardwaj                 
+/data/akhtar/group                    void:/data/akhtar/LUN61/group                    
+
