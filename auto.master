@@ -1,8 +1,10 @@
 # For details of the format look at autofs(5).
 #
-# timeo=180,nosuid,mountproto=tcp,rsize=1048576,wsize=1048576,hard,intr
+# -nosuid,vers=4,mountproto=tcp,rsize=1048576,wsize=1048576,hard,intr
+# rsize/wsize = 32768 for ext3
 #
-/home         /etc/automount/auto.home      timeo=300,nosuid,mountproto=tcp,hard,intr
-/maintain     /etc/automount/auto.maintain  timeo=300,nosuid,mountproto=tcp,hard,intr
-/-            /etc/automount/auto.valid     timeo=300,nosuid,vers=4,mountproto=tcp,hard,intr
-/-            /etc/automount/auto.solsys4   timeo=300,nosuid,vers=4,mountproto=tcp,hard,intr
+/home         /etc/automount/auto.home      --timeout=300
+/maintain     /etc/automount/auto.maintain  --timeout=300 
+/-            /etc/automount/auto.solsys4   --timeout=300 -nosuid,vers=4,mountproto=tcp,hard,intr,rsize=32768,wsize=32768
+/-            /etc/automount/auto.valid     --timeout=300 -nosuid,vers=4,mountproto=tcp,hard,intr,rsize=1048576,wsize=1048576
+/-            /etc/automount/auto.void      --timeout=300 -nosuid,vers=4,mountproto=tcp,hard,intr,rsize=1048576,wsize=1048576

@@ -17,4 +17,5 @@ sleep 15
 killall -9 automount
 /usr/sbin/automount
 
+sequenceserver
 sleep 1000000
