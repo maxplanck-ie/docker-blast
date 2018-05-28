@@ -1,2 +1,10 @@
 /data/pospisilik/DEEP                              valid:/data/pospisilik/LUN02/DEEP
-/data/grosschedl/ramamoorthy2                      valid:/data/grosschedl/LUN32/ramamoorthy2
+/data/grosschedl/ramamoorthy2                      valid:/data/grosschedl/LUN03/ramamoorthy2
+/data/cabezas/group                                valid:/data/cabezas/LUN06/group
+/data/cabezas/repository                           valid:/data/cabezas/LUN06/repository
+/data/cabezas/sequencing_data                      valid:/data/cabezas/LUN06/sequencing_data
+/data/pichler/group                                valid:/data/pichler/LUN36/group
+/data/pichler/repository                           valid:/data/pichler/LUN36/repository
+/data/pichler/sequencing_data                      valid:/data/pichler/LUN36/sequencing_data
+/data/boehm/mayumi                                 valid:/data/boehm/LUN37/mayumi
+/data/gruen/sagar                                  valid:/data/gruen/LUN38/sagar

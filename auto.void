@@ -25,13 +25,9 @@
 
 /data/manke/kilpert                   void:/data/manke/LUN69/kilpert
 
-/data/processing3                     void:/data/processing/LUN46/scratch
-
 /data/laemmermann/repository          void:/data/laemmermann/LUN70/repository          
 /data/laemmermann/sequencing_data     void:/data/laemmermann/LUN70/sequencing_data
 
 /data/akhtar/sequencing_data          void:/data/akhtar/LUN55/sequencing_data
 /data/akhtar/repository               void:/data/akhtar/LUN56/repository
-/data/akhtar/bhardwaj                 void:/data/akhtar/LUN62/bhardwaj                 
-/data/akhtar/group                    void:/data/akhtar/LUN61/group                    
 

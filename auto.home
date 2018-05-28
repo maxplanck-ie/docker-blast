@@ -1,1 +1,0 @@
-* -mountproto=tcp,rsize=32768,wsize=32768,hard,intr solsys1:/home/&

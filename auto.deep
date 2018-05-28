@@ -1,0 +1,18 @@
+/data/slurm/acct                           deep1:/slurm/var/acct
+#
+/data/gruen/herman                         deep10:/data/gruen/LUN1201/herman
+/data/gruen/zeis                           deep10:/data/gruen/LUN1201/zeis
+#
+/data/mittler/group                        deep10:/data/mittler/LUN1202/group
+#
+/data/akhtar/bhardwaj                      deep11:/data/akhtar/LUN1301/bhardwaj
+/data/akhtar/group                         deep11:/data/akhtar/LUN1302/group
+#
+/data/manke/sikora                         deep12:/data/manke/LUN1400/sikora
+#
+/data/processing                           deep13:/data/general/LUN1501/processing/0
+/data/processing1                          deep13:/data/general/LUN1501/processing/1
+/data/processing2                          deep13:/data/general/LUN1501/processing/2
+/data/processing3                          deep13:/data/general/LUN1501/processing/3
+/data/processing4                          deep13:/data/general/LUN1501/processing/4
+

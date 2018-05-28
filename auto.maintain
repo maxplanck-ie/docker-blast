@@ -1,1 +1,0 @@
-* -mountproto=tcp,vers=4,hard,intr,rsize=1048576,wsize=1048576 domus:/data/general/LUN1000/maintain/& 
