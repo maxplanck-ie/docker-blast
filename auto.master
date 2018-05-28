@@ -1,11 +1,6 @@
 # direct autofs maps
-/-               /etc/automount/auto.nis       --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
+/-               /etc/automount/auto.deep      --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.solsys4   --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
+/-               /etc/automount/auto.stiff     --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.valid     --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.void      --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
-/-               /etc/automount/auto.stiff     --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
-/-               /etc/automount/auto.scratch   --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
-/-               /etc/automount/auto.deep      --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
-/-               /etc/automount/auto.cisterna  --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
-# option file,amd: starting with autofs version 5.1.1 
-#/data         file,amd:/etc/automount/auto.vmhosts --timeout=300 -nosuid,mountproto=tcp,hard,intr,rsize=32768,wsize=32768
