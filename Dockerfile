@@ -17,7 +17,7 @@ RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.6.0/ncbi-blast
     cp ncbi-blast-2.6.0+/bin/* /usr/local/bin
 RUN git clone https://github.com/wurmlab/sequenceserver && \
     cd sequenceserver && \
-    git checkout 1.1.0.beta7 && \
+    git checkout 1.1.0.beta8 && \
     gem install bundler && \
     bundle install --without=development
 
