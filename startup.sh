@@ -18,4 +18,4 @@ killall -9 automount
 /usr/sbin/automount
 
 cd /sequenceserver && bundle exec bin/sequenceserver -D
-sleep 1000000
+tail -f /var/log/alternatives.log
