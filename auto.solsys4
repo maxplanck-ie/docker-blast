@@ -30,6 +30,4 @@
 /data/trompouki/sequencing_data       solsys4:/data/trompouki/LUN43/sequencing_data
 /data/trompouki/group                 solsys4:/data/trompouki/LUN29/group
 
-/data/reth/repository                 solsys4:/data/reth/LUN44/repository
-/data/reth/sequencing_data            solsys4:/data/reth/LUN44/sequencing_data
 /data/reth/group                      solsys4:/data/reth/LUN45/group

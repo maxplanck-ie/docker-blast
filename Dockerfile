@@ -25,8 +25,11 @@ ADD startup.sh /usr/local/bin/startup.sh
 RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
 ADD ./yp.conf /etc/yp.conf
 ADD ./auto.master /etc/auto.master
+ADD ./auto.cisterna /etc/automount/auto.cisterna
 ADD ./auto.deep /etc/automount/auto.deep
+ADD ./auto.deep1 /etc/automount/auto.deep1
 ADD ./auto.solsys4 /etc/automount/auto.solsys4
+ADD ./auto.scratch /etc/automount/auto.scratch
 ADD ./auto.stiff /etc/automount/auto.stiff
 ADD ./auto.valid /etc/automount/auto.valid
 ADD ./auto.void /etc/automount/auto.void
