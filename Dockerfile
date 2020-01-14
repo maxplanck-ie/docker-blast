@@ -12,12 +12,12 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get install -y build-essential ruby ruby-dev wget
 RUN apt-get install -y psmisc nfs-kernel-server autofs nis git nodejs npm
-RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.6.0/ncbi-blast-2.6.0+-x64-linux.tar.gz && \
-    tar xf ncbi-blast-2.6.0+-x64-linux.tar.gz && \
-    cp ncbi-blast-2.6.0+/bin/* /usr/local/bin
+RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-linux.tar.gz && \
+    tar xf ncbi-blast-2.9.0+-x64-linux.tar.gz && \
+    cp ncbi-blast-2.9.0+/bin/* /usr/local/bin
 RUN git clone https://github.com/wurmlab/sequenceserver && \
     cd sequenceserver && \
-    git checkout 1.1.0.beta8 && \
+    git checkout 2.0.0.beta3 && \
     gem install bundler && \
     bundle install --without=development
 
