@@ -1,23 +1,34 @@
-/data/slurm/acct              deep1:/slurm/var/acct
-
-/data/reth/repository         deep9:/data/reth/LUN1100/repository
-/data/reth/sequencing_data    deep9:/data/reth/LUN1100/sequencing_data
+/data/general/slurmctl        deep17:/data/general/LUN10002/slurmctl
 
 /data/gruen/herman            deep10:/data/gruen/LUN1201/herman
 /data/gruen/zeis              deep10:/data/gruen/LUN1201/zeis
-
 /data/mittler/group           deep10:/data/mittler/LUN1202/group
 
 /data/akhtar/bhardwaj         deep11:/data/akhtar/LUN1301/bhardwaj
 /data/akhtar/group            deep11:/data/akhtar/LUN1302/group
+/data/akhtar/group3           deep11:/data/akhtar/LUN1303/group3
 
 /data/manke/sikora            deep12:/data/manke/LUN1400/sikora
+/data/manke/sequencing_data   deep12:/data/manke/LUN1401/sequencing_data
+/data/deepseq/sequencing_data deep12:/data/manke/LUN1401/sequencing_data
+/data/avilov/group            deep12:/data/avilov/LUN1402/group
+/data/deepseq/group           deep12:/data/deepseq/LUN1403/group
+/data/laemmermann/group       deep12:/data/laemmermann/LUN1404/group
+
+/data/it/group                deep13:/data/general/LUN1502/it
+
+/data/trompouki/group         deep14:/data/trompouki/LUN1602/group
+/data/gruen/sequencing_data   deep14:/data/gruen/LUN1603/sequencing_data
+
 
 /data/boehm/group             deep16:/data/boehm/LUN1802/group
+/data/akhtar/repository2      deep16:/data/akhtar/LUN1803/repository2
+/data/akhtar/group2           deep16:/data/akhtar/LUN1804/group2
 
 /data/processing       -noatime,nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576 deep13:/data/general/LUN1501/processing/0
 /data/processing1      -noatime,nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576 deep14:/data/general/LUN1601/processing/1
 /data/processing2      -noatime,nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576 deep15:/data/general/LUN1701/processing/2
 /data/processing3      -noatime,nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576 deep16:/data/general/LUN1801/processing/3
 /data/processing4      -noatime,nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576 deep9:/data/general/LUN1101/processing/4
+/data/processing5      -noatime,nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576 deep12:/data/general/LUN1405/processing/5
 

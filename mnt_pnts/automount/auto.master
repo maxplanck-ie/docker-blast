@@ -1,8 +1,9 @@
-/-               /etc/automount/auto.nis       --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
-/-               /etc/automount/auto.solsys4   --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.valid     --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.void      --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.stiff     --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
-/-               /etc/automount/auto.scratch   --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.deep      --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
 /-               /etc/automount/auto.cisterna  --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
+/-               /etc/automount/auto.bread     --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
+/-               /etc/automount/auto.butter    --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
+/-               /etc/automount/auto.brezel    --timeout=300 -nosuid,vers=4,hard,intr,rsize=1048576,wsize=1048576
+

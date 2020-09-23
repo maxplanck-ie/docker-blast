@@ -1,0 +1,237 @@
+Sending build context to Docker daemon  131.6kB
+Step 1/18 : FROM ubuntu:16.04
+ ---> 657d80a6401d
+Step 2/18 : MAINTAINER Devon P. Ryan, dpryan79@gmail.com
+ ---> Using cache
+ ---> 9ad3da045047
+Step 3/18 : ENV DEBIAN_FRONTEND noninteractive
+ ---> Using cache
+ ---> 99ee45c410e3
+Step 4/18 : RUN apt-get update
+ ---> Using cache
+ ---> 0c3bb4cc55ab
+Step 5/18 : RUN apt-get install -y build-essential ruby ruby-dev wget
+ ---> Using cache
+ ---> 44acb16a7c10
+Step 6/18 : RUN apt-get install -y psmisc nfs-kernel-server autofs nis git nodejs npm
+ ---> Using cache
+ ---> 94e0a52c665e
+Step 7/18 : RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-linux.tar.gz &&     tar xf ncbi-blast-2.9.0+-x64-linux.tar.gz &&     cp ncbi-blast-2.9.0+/bin/* /usr/local/bin
+ ---> Using cache
+ ---> 353ae15eccd3
+Step 8/18 : RUN git clone https://github.com/wurmlab/sequenceserver &&     cd sequenceserver &&     git checkout 2.0.0.beta3 &&     gem install bundler &&     bundle install --without=development
+ ---> Using cache
+ ---> 057c94a8bc8b
+Step 9/18 : ADD startup.sh /usr/local/bin/startup.sh
+ ---> Using cache
+ ---> f6c5f3532c89
+Step 10/18 : RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
+ ---> Using cache
+ ---> 70bbcf971708
+Step 11/18 : ADD mnt_pnts/automounter/yp.conf /etc/yp.conf
+ADD failed: stat /docker/tmp/docker-builder335784999/mnt_pnts/automounter/yp.conf: no such file or directory
+Sending build context to Docker daemon  133.1kB
+Step 1/18 : FROM ubuntu:16.04
+ ---> 657d80a6401d
+Step 2/18 : MAINTAINER Devon P. Ryan, dpryan79@gmail.com
+ ---> Using cache
+ ---> 9ad3da045047
+Step 3/18 : ENV DEBIAN_FRONTEND noninteractive
+ ---> Using cache
+ ---> 99ee45c410e3
+Step 4/18 : RUN apt-get update
+ ---> Using cache
+ ---> 0c3bb4cc55ab
+Step 5/18 : RUN apt-get install -y build-essential ruby ruby-dev wget
+ ---> Using cache
+ ---> 44acb16a7c10
+Step 6/18 : RUN apt-get install -y psmisc nfs-kernel-server autofs nis git nodejs npm
+ ---> Using cache
+ ---> 94e0a52c665e
+Step 7/18 : RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-linux.tar.gz &&     tar xf ncbi-blast-2.9.0+-x64-linux.tar.gz &&     cp ncbi-blast-2.9.0+/bin/* /usr/local/bin
+ ---> Using cache
+ ---> 353ae15eccd3
+Step 8/18 : RUN git clone https://github.com/wurmlab/sequenceserver &&     cd sequenceserver &&     git checkout 2.0.0.beta3 &&     gem install bundler &&     bundle install --without=development
+ ---> Using cache
+ ---> 057c94a8bc8b
+Step 9/18 : ADD startup.sh /usr/local/bin/startup.sh
+ ---> Using cache
+ ---> f6c5f3532c89
+Step 10/18 : RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
+ ---> Using cache
+ ---> 70bbcf971708
+Step 11/18 : ADD ./mnt_pnts/automounter/yp.conf /etc/yp.conf
+ADD failed: stat /docker/tmp/docker-builder639300954/mnt_pnts/automounter/yp.conf: no such file or directory
+Sending build context to Docker daemon  134.7kB
+Step 1/18 : FROM ubuntu:16.04
+ ---> 657d80a6401d
+Step 2/18 : MAINTAINER Devon P. Ryan, dpryan79@gmail.com
+ ---> Using cache
+ ---> 9ad3da045047
+Step 3/18 : ENV DEBIAN_FRONTEND noninteractive
+ ---> Using cache
+ ---> 99ee45c410e3
+Step 4/18 : RUN apt-get update
+ ---> Using cache
+ ---> 0c3bb4cc55ab
+Step 5/18 : RUN apt-get install -y build-essential ruby ruby-dev wget
+ ---> Using cache
+ ---> 44acb16a7c10
+Step 6/18 : RUN apt-get install -y psmisc nfs-kernel-server autofs nis git nodejs npm
+ ---> Using cache
+ ---> 94e0a52c665e
+Step 7/18 : RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-linux.tar.gz &&     tar xf ncbi-blast-2.9.0+-x64-linux.tar.gz &&     cp ncbi-blast-2.9.0+/bin/* /usr/local/bin
+ ---> Using cache
+ ---> 353ae15eccd3
+Step 8/18 : RUN git clone https://github.com/wurmlab/sequenceserver &&     cd sequenceserver &&     git checkout 2.0.0.beta3 &&     gem install bundler &&     bundle install --without=development
+ ---> Using cache
+ ---> 057c94a8bc8b
+Step 9/18 : ADD startup.sh /usr/local/bin/startup.sh
+ ---> Using cache
+ ---> f6c5f3532c89
+Step 10/18 : RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
+ ---> Using cache
+ ---> 70bbcf971708
+Step 11/18 : ADD ./mnt_pnts/automount/yp.conf /etc/yp.conf
+ ---> 0bde6ad94a91
+Step 12/18 : ADD ./mnt_pnts/automount/nsswitch.conf /etc/nsswitch.conf
+ ---> ddd7c3d5f4d4
+Step 13/18 : COPY ./mnt_pnts/automount/auto* /etc/eutomount/
+ ---> 54ac7306bed0
+Step 14/18 : ADD ./.sequenceserver.conf /root/.sequenceserver.conf
+ ---> 3c4c98a5a7cb
+Step 15/18 : ENV TERM xterm
+ ---> Running in 70455077336e
+Removing intermediate container 70455077336e
+ ---> 19996a0a5a91
+Step 16/18 : EXPOSE :8080
+ ---> Running in 948c26f272ec
+Removing intermediate container 948c26f272ec
+ ---> 7066b4d4b851
+Step 17/18 : VOLUME ["/db"]
+ ---> Running in 52de16dd4d95
+Removing intermediate container 52de16dd4d95
+ ---> 7a4ce6689ab4
+Step 18/18 : CMD ["startup.sh"]
+ ---> Running in 84ccf5d4d24c
+Removing intermediate container 84ccf5d4d24c
+ ---> 422b45e2dfa6
+Successfully built 422b45e2dfa6
+Successfully tagged docker-sequenceserver:23.09.20
+Sending build context to Docker daemon  136.7kB
+Step 1/18 : FROM ubuntu:16.04
+ ---> 657d80a6401d
+Step 2/18 : MAINTAINER Devon P. Ryan, dpryan79@gmail.com
+ ---> Using cache
+ ---> 9ad3da045047
+Step 3/18 : ENV DEBIAN_FRONTEND noninteractive
+ ---> Using cache
+ ---> 99ee45c410e3
+Step 4/18 : RUN apt-get update
+ ---> Using cache
+ ---> 0c3bb4cc55ab
+Step 5/18 : RUN apt-get install -y build-essential ruby ruby-dev wget
+ ---> Using cache
+ ---> 44acb16a7c10
+Step 6/18 : RUN apt-get install -y psmisc nfs-kernel-server autofs nis git nodejs npm
+ ---> Using cache
+ ---> 94e0a52c665e
+Step 7/18 : RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-linux.tar.gz &&     tar xf ncbi-blast-2.9.0+-x64-linux.tar.gz &&     cp ncbi-blast-2.9.0+/bin/* /usr/local/bin
+ ---> Using cache
+ ---> 353ae15eccd3
+Step 8/18 : RUN git clone https://github.com/wurmlab/sequenceserver &&     cd sequenceserver &&     git checkout 2.0.0.beta3 &&     gem install bundler &&     bundle install --without=development
+ ---> Using cache
+ ---> 057c94a8bc8b
+Step 9/18 : ADD startup.sh /usr/local/bin/startup.sh
+ ---> Using cache
+ ---> f6c5f3532c89
+Step 10/18 : RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
+ ---> Using cache
+ ---> 70bbcf971708
+Step 11/18 : ADD ./mnt_pnts/automount/yp.conf /etc/yp.conf
+ ---> Using cache
+ ---> 0bde6ad94a91
+Step 12/18 : ADD ./mnt_pnts/automount/nsswitch.conf /etc/nsswitch.conf
+ ---> Using cache
+ ---> ddd7c3d5f4d4
+Step 13/18 : COPY ./mnt_pnts/automount/auto* /etc/automount/
+ ---> 99af1dd354a0
+Step 14/18 : ADD ./.sequenceserver.conf /root/.sequenceserver.conf
+ ---> 43293aa1df3c
+Step 15/18 : ENV TERM xterm
+ ---> Running in 93e8cd0bff94
+Removing intermediate container 93e8cd0bff94
+ ---> 6baace48a3fd
+Step 16/18 : EXPOSE :8080
+ ---> Running in 1875d8d57896
+Removing intermediate container 1875d8d57896
+ ---> 4657ce09d0fc
+Step 17/18 : VOLUME ["/db"]
+ ---> Running in 974dc04f8eba
+Removing intermediate container 974dc04f8eba
+ ---> aa305b2cd3d3
+Step 18/18 : CMD ["startup.sh"]
+ ---> Running in e3d2e3d045fd
+Removing intermediate container e3d2e3d045fd
+ ---> 99fee30ad453
+Successfully built 99fee30ad453
+Successfully tagged docker-sequenceserver:23.09.20
+Sending build context to Docker daemon  139.3kB
+Step 1/19 : FROM ubuntu:16.04
+ ---> 657d80a6401d
+Step 2/19 : MAINTAINER Devon P. Ryan, dpryan79@gmail.com
+ ---> Using cache
+ ---> 9ad3da045047
+Step 3/19 : ENV DEBIAN_FRONTEND noninteractive
+ ---> Using cache
+ ---> 99ee45c410e3
+Step 4/19 : RUN apt-get update
+ ---> Using cache
+ ---> 0c3bb4cc55ab
+Step 5/19 : RUN apt-get install -y build-essential ruby ruby-dev wget
+ ---> Using cache
+ ---> 44acb16a7c10
+Step 6/19 : RUN apt-get install -y psmisc nfs-kernel-server autofs nis git nodejs npm
+ ---> Using cache
+ ---> 94e0a52c665e
+Step 7/19 : RUN wget -q ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-linux.tar.gz &&     tar xf ncbi-blast-2.9.0+-x64-linux.tar.gz &&     cp ncbi-blast-2.9.0+/bin/* /usr/local/bin
+ ---> Using cache
+ ---> 353ae15eccd3
+Step 8/19 : RUN git clone https://github.com/wurmlab/sequenceserver &&     cd sequenceserver &&     git checkout 2.0.0.beta3 &&     gem install bundler &&     bundle install --without=development
+ ---> Using cache
+ ---> 057c94a8bc8b
+Step 9/19 : ADD startup.sh /usr/local/bin/startup.sh
+ ---> Using cache
+ ---> f6c5f3532c89
+Step 10/19 : RUN rm -f /etc/auto.net /etc/auto.misc /etc/auto.smb
+ ---> Using cache
+ ---> 70bbcf971708
+Step 11/19 : ADD ./mnt_pnts/automount/yp.conf /etc/yp.conf
+ ---> Using cache
+ ---> 0bde6ad94a91
+Step 12/19 : ADD ./mnt_pnts/automount/auto.master /etc/auto.master
+ ---> c5962627b70e
+Step 13/19 : ADD ./mnt_pnts/automount/nsswitch.conf /etc/nsswitch.conf
+ ---> 09571a52b2d8
+Step 14/19 : COPY ./mnt_pnts/automount/auto* /etc/automount/
+ ---> 5dfcecc3c5b5
+Step 15/19 : ADD ./.sequenceserver.conf /root/.sequenceserver.conf
+ ---> c14e89108057
+Step 16/19 : ENV TERM xterm
+ ---> Running in 7c1069018b35
+Removing intermediate container 7c1069018b35
+ ---> ffa4e56dcaf0
+Step 17/19 : EXPOSE :8080
+ ---> Running in acead3690352
+Removing intermediate container acead3690352
+ ---> aaa2fa0c913e
+Step 18/19 : VOLUME ["/db"]
+ ---> Running in 296fe877fc48
+Removing intermediate container 296fe877fc48
+ ---> 6abd08611235
+Step 19/19 : CMD ["startup.sh"]
+ ---> Running in b9ec3faab78d
+Removing intermediate container b9ec3faab78d
+ ---> ea7cbfa249a3
+Successfully built ea7cbfa249a3
+Successfully tagged docker-sequenceserver:23.09.20

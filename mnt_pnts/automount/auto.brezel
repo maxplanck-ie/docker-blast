@@ -1,0 +1,9 @@
+/data/grosschedl/repository          brezel:/brezel/data/grosschedl/LUN49/repository
+/data/grosschedl/ramamoorthy         brezel:/brezel/data/grosschedl/LUN50/ramamoorthy
+/data/iovino/repository              brezel:/brezel/data/iovino/LUN59/repository
+/data/iovino/sequencing_data         brezel:/brezel/data/iovino/LUN1008/sequencing_data
+/data/jenuwein/sequencing_data       brezel:/brezel/data/jenuwein/LUN14/sequencing_data
+/data/rambold/sequencing_data        brezel:/brezel/data/rambold/LUN1009/sequencing_data
+/data/boehm/genomes                  brezel:/brezel/data/boehm/LUN1010/genomes
+/data/boehm/sequencing_data2         brezel:/brezel/data/boehm/LUN1011/sequencing_data2
+/data/boehm/blast_databases          brezel:/brezel/data/boehm/LUN1012/blast_databases

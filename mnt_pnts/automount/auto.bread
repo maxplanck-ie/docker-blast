@@ -1,0 +1,16 @@
+/data/sawarkar/hummel                bread:/data/sawarkar/LUN15/hummel
+/data/sawarkar/group                 bread:/data/sawarkar/LUN23/group
+/data/sawarkar/sequencing_data       bread:/data/sawarkar/LUN16/sequencing_data
+/data/repository                     bread:/data/general/LUN00/repository
+/data/manke/repository               bread:/data/manke/LUN54/repository
+/data/jenuwein/repository            bread:/data/jenuwein/LUN20/repository
+/data/jenuwein/group                 bread:/data/jenuwein/LUN22/group
+/data/iovino/group                   bread:/data/iovino/LUN33/group
+/data/trompouki/sequencing_data      bread:/data/trompouki/LUN43/sequencing_data
+
+/data/grosschedl/sequencing_data     bread:/data/grosschedl/LUN48/sequencing_data
+/data/grosschedl/group               bread:/data/grosschedl/LUN41/group
+/data/grosschedl/essen               bread:/data/grosschedl/LUN42/essen
+
+/data/akhtar/suny                    bread:/data/akhtar/LUN1006/suny
+/data/akhtar/Mouse2019AlleleSpecific bread:/data/akhtar/LUN1007/Mouse2019AlleleSpecific
